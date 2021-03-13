@@ -60,7 +60,7 @@ namespace Cohesion.Models
                     mail.Subject = "Request Status Change";
                     mail.Body = message;
                     SmtpServer.Port = 587;
-                    SmtpServer.Credentials = new System.Net.NetworkCredential("cohesionservicerequest@gmail.com", "c0hesi0nrequest");
+                    SmtpServer.Credentials = new System.Net.NetworkCredential("cohesionservicerequest@gmail.com", "password");
                     SmtpServer.EnableSsl = true;
                     SmtpServer.Send(mail);
                 }
